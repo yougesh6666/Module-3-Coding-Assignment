@@ -1,253 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html>
+
 <head>
-	<meta charset='utf-8'>
-	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<title>Module 3 Assignment</title>
-	<style>
-		body {
-  font-size: 16px;
-  color: #fff;
-  background-color: rgb(0, 250, 250);
-  font-family: 'Oxygen', sans-serif;
-}
-* {
-  box-sizing: border-box;
-}
-
-h1 {
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  color: rgb(0, 0, 0);
-  margin-bottom: 30px;
-}
-
-p {
-  padding: 15px 25px 0px 25px;
-  font-family: Georgia sans-serif;
-  font-size: 16px;
-  position: relative;
-  color: rgb(0, 0, 0);
-}
-
-.section { 
-  background-color: rgb(100, 100, 100);
-    border: 2px solid black;
-    margin-top: 20px; 
-    margin-left: 30px;
-    margin-right: 0px; 
-    padding: 3px;
-    text-align: justify;
-    position: relative;
- }
-
-span {
-  font-size: 20px;
-  width: 100%;
-  font-weight: bold;
-  text-align: center;
-}
-
-#nr1  {
-  color: rgb(0, 0, 0);
-  width: 100%;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-#nr2 {
-  color: rgb(0, 0, 0);
-  width: 100%;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-#nr3 {
-  color: rgb(0, 0, 0);
-  width: 100%;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.row {
-  width: 100%;
-}
-/* HEADER */
-#header-nav {
-  background-color: rgb(250,250,250);
-  border-radius: 0;
-  border: 0;
-  overflow: hidden;
-}
-
-.navbar-brand {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.navbar-brand h1 { /* Company's name */
-  font-family: 'Lora', serif; 
-  color: rgb(0,0,0);
-  font-size: 1.8em;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 20px;
-  line-height: .75;
-}
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-.navbar-brand h2 { /* Our Menu */
-  color: #000;
-  font-weight: bold;
-  font-size: .7em;
-  text-align: center;
-  margin-top: 15px;
-}
-
-#nav-list {  /* #nav-list is the <ul> under the navbar section */
-  margin-top: 10px;
-}
-#nav-list a { /* this is for link/glyphicon color and aligning to center */
-  color: rgb(0,0,0);
-  font-weight: bold;
-  text-align: center;
-  border: 1px solid black;
-  background-color: rgb(200,200,200);
-}
-#nav-list a:hover { /* this is for changing mouse pointer when it goes over glyphicon */
-  background: #E7E7E7;
-}
-#nav-list a span { /* for font options of navigation list elements */
-  font-size: 1.2em;
-}
-
-p .text-center {
-  margin-top: 30px;
-}
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid rgb(15,200,90);
-}
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px; /* This is for 'Computers' message to be in the top part, to override 'float' collapsing feature */
-}
-/* END HEADER */
-
-@media (min-width: 1200px) {
-#header-nav {
-  height: 70px;
-}
-.navbar-brand {
-    padding-top: 10px;
-    height: 70px;
-    border-bottom: 20px;
-    } 
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-#header-nav {
-    padding-top: 10px;
-    height: 70px; 
-    }  
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  #header-nav {
-    padding-top: 10px;
-    height: 70px; 
-    }
-  }
-  }
-/********** Extra small devices only **********/
-
-@media (max-width: 767px) {
-  /* Header */
-  .navbar-brand {
-    padding-top: 10px;
-    height: 70px;
-  }
-
-  .navbar-brand h1 { /* Company's name */
-    padding-top: 10px;
-  }
-
-  #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
-  }
-}
-	</style>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Make a web page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/module3-solution-css.css">
 </head>
+
 <body>
-	<header>
-		<nav id='header-nav' class='navbar navbar-default'>
-			<div class='container'>
-				<div class='navbar-header'>
-					<a href='index.html' class='pull-left visible-md visible-lg'> 
-						<div id='logo-img'></div> 
-					</a> <!--'pull-left' floats content to the left, 'visible-md/lg shows the content when the page size is right -->
-						
-						<div class='navbar-brand'>
-							<a href='index.html'><h1>Food, LLC</h1></a>
-						</div>
-						
-						<button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#collapsable-nav' aria-expanded='false'>
-							<span class='sr-only'>Toggle navigation</span>
-							<span class='icon-bar'></span>
-							<span class='icon-bar'></span>
-							<span class='icon-bar'></span>
-						</button> <!--This code is copied from getbootstrap.com/components/#navbar -->
-				</div>
-				<div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="nav-list" class="nav navbar-nav navbar-right">
-           	<li class="visible-xs"> 
-              <a href="index.html">
-                <span class="visible-xs "></span> Chicken</a> 
-            </li>
-            <li class="visible-xs">
-              <a href="index.html">
-                <span></span> Beef</a> 
-            </li>
-            <li class="visible-xs ">
-              <a href="#">
-                <span></span> Sushi</a>
-            </li>
-          </ul><!-- #nav-list -->
-        </div><!-- .collapse .navbar-collapse -->
-      </div><!-- .container -->
-    </nav><!-- #header-nav -->
-  </header>
-  
-  <h1 class="text-center">Our Menu </h1>
-		<div class='row'>
-			<div class='col-lg-12 col-md-12 sm-12xs-12'>
-				<div class='section'>
-					<div id='nr1'>Chicken</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit.  Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
-				</div>
-			</div>
-			<div class='col-lg-12 col-md-12 sm-12 xs-12'>
-		<div class='section'>
-			<div id='nr2'>Beef</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
-		</div>
-	</div>
-	<div class='col-lg-12 col-md-12 sm-12 xs-12'>
-		<div class='section'>
-			<div id='nr3'>Sushi</div>
-				<p>ILorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.<a href='https://en.wikipedia.org/wiki/Lorem_ipsum' target='blank' title='Source'>Source</a></p>
-		</div>
-	</div>
-</div>
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: gray; border: 2px solid black;">
+            <a class="navbar-brand" href="#">FOOD</a>
+            <button class="navbar-toggler" style="border: black 2px solid;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="nav navbar-nav" id="nav-text">
+                    <a class="nav-item nav-link active" href="#">Chicken<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#"> <span class="hidden-md-up">Beef</span></a>
+                    <a class="nav-item nav-link" href="#">Sushi</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="heading-title text-center">Our Menu</h1>
+
+    <div class="box">
+        <div class="container item1">
+            <section>
+                <div id="chicken">
+                    <p>Chicken</p>
+                </div>
+                <p>Chickens are gregarious birds and live together in flocks. They have a communal approach to the
+                    incubation of eggs and raising of young. Individual chickens in a flock will dominate others,
+                    establishing a "pecking order", with dominant individuals having priority for food access and
+                    nesting locations. Removing hens or roosters from a flock causes a temporary disruption to this
+                    social order until a new pecking order is established. Adding hens, especially younger birds, to an
+                    existing flock can lead to fighting and injury.[19] When a rooster finds food, he may call other
+                    chickens to eat first. He does this by clucking in a high pitch as well as picking up and dropping
+                    the food. This behavior may also be observed in mother hens to call their chicks and encourage them
+                    to eat.</p>
+            </section>
+        </div>
+
+        <div class="container item2">
+            <section>
+                <div id="beef">
+                    <p>Beef</p>
+                </div>
+                <p>Chickens are gregarious birds and live together in flocks. They have a communal approach to the
+                    incubation of eggs and raising of young. Individual chickens in a flock will dominate others,
+                    establishing a "pecking order", with dominant individuals having priority for food access and
+                    nesting locations. Removing hens or roosters from a flock causes a temporary disruption to this
+                    social order until a new pecking order is established. Adding hens, especially younger birds, to an
+                    existing flock can lead to fighting and injury.[19] When a rooster finds food, he may call other
+                    chickens to eat first. He does this by clucking in a high pitch as well as picking up and dropping
+                    the food. This behavior may also be observed in mother hens to call their chicks and encourage them
+                    to eat.</p>
+            </section>
+        </div>
+
+        <div class="container item3">
+            <section>
+                <div id="sushi">
+                    <p>Sushi</p>
+                </div>
+                <p>Chickens are gregarious birds and live together in flocks. They have a communal approach to the
+                    incubation of eggs and raising of young. Individual chickens in a flock will dominate others,
+                    establishing a "pecking order", with dominant individuals having priority for food access and
+                    nesting locations. Removing hens or roosters from a flock causes a temporary disruption to this
+                    social order until a new pecking order is established. Adding hens, especially younger birds, to an
+                    existing flock can lead to fighting and injury.[19] When a rooster finds food, he may call other
+                    chickens to eat first. He does this by clucking in a high pitch as well as picking up and dropping
+                    the food. This behavior may also be observed in mother hens to call their chicks and encourage them
+                    to eat.</p>
+            </section>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
